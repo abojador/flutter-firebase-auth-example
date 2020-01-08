@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:identity/identity.dart';
 import 'package:identity_firebase/identity_firebase.dart';
 import 'package:identity_firebase_facebook/identity_firebase_facebook.dart';
+import 'package:identity_firebase_google/identity_firebase_google.dart';
 
 import 'user.dart';
 
@@ -30,8 +31,11 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
 
     Identity.of(context).init(
-        FirebaseProvider(
-            [EmailAuthenticator(), FirebaseFacebookAuthenticator()]),
+        FirebaseProvider([
+          EmailAuthenticator(),
+          FirebaseFacebookAuthenticator(),
+          FirebaseGoogleAuthenticator()
+        ]),
         (context) => UserPage(user: Identity.instance.user));
   }
 }

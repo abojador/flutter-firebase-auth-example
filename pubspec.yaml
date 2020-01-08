@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   identity_firebase: ^0.0.1
   identity_firebase_facebook: ^0.0.1
+  identity_firebase_google: ^0.0.1
 
 dev_dependencies:
   flutter_test:
