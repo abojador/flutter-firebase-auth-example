@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:identity/identity.dart';
 import 'package:sso/sso.dart';
 
 class UserPage extends StatelessWidget {
@@ -9,7 +10,14 @@ class UserPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("User Page")),
+      appBar: AppBar(
+        title: Text("User Page"),
+        actions: <Widget>[
+          IconButton(
+              onPressed: () => Identity.of(context).user = null,
+              icon: Icon(Icons.close))
+        ],
+      ),
       body: Container(
         color: Colors.blueAccent,
         padding: EdgeInsets.all(16),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:identity/identity.dart';
 import 'package:identity_firebase/identity_firebase.dart';
+import 'package:identity_firebase_facebook/identity_firebase_facebook.dart';
 
 import 'user.dart';
 
@@ -28,7 +29,9 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
 
-    Identity.of(context).init(FirebaseProvider(),
+    Identity.of(context).init(
+        FirebaseProvider(
+            [EmailAuthenticator(), FirebaseFacebookAuthenticator()]),
         (context) => UserPage(user: Identity.instance.user));
   }
 }

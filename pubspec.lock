@@ -118,6 +118,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_facebook_login:
+    dependency: transitive
+    description:
+      name: flutter_facebook_login
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -155,7 +162,14 @@ packages:
       name: identity_firebase
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.3"
+    version: "0.0.5"
+  identity_firebase_facebook:
+    dependency: "direct main"
+    description:
+      name: identity_firebase_facebook
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.2"
   image:
     dependency: transitive
     description:
