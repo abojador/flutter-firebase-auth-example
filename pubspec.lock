@@ -77,7 +77,7 @@ packages:
       name: firebase_auth
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.15.3"
+    version: "0.15.3+1"
   firebase_auth_platform_interface:
     dependency: transitive
     description:
@@ -91,14 +91,14 @@ packages:
       name: firebase_auth_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.1+1"
+    version: "0.1.1+2"
   firebase_core:
     dependency: transitive
     description:
       name: firebase_core
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.3+1"
+    version: "0.4.3+2"
   firebase_core_platform_interface:
     dependency: transitive
     description:
@@ -112,7 +112,7 @@ packages:
       name: firebase_core_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.1+1"
+    version: "0.1.1+2"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -183,7 +183,7 @@ packages:
       name: identity_firebase
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.5"
+    version: "0.0.6"
   identity_firebase_facebook:
     dependency: "direct main"
     description:

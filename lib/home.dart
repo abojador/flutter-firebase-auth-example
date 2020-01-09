@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     Identity.of(context).init(
         FirebaseProvider([
-          EmailAuthenticator(),
+          FirebaseEmailAuthenticator(),
           FirebaseFacebookAuthenticator(),
           FirebaseGoogleAuthenticator()
         ]),
